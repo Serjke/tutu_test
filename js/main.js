@@ -20,4 +20,16 @@ $('.rating label').click(function () {
 );
 $('.radio-group label').click(function () {
     $(this).addClass('active').siblings().removeClass('active');
+});
+$('.mobile-right').click(function () {
+    $(this).next('ul').slideToggle('slow');
+});
+var hmenu = $(".head-menu");
+$(window).on("resize", function(){
+    if($(window).width() > 767) {
+        hmenu.css('display', "table-row");
+    }
+    else {
+        hmenu.css('display', "none");
+    }
 })

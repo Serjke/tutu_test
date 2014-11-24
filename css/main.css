@@ -109,6 +109,7 @@ a:focus {
 .wrapper {
     width: 930px;
     margin: 30px auto;
+    padding: 0 15px;
     text-align: center;
 }
 .rating {display: inline-block;  margin: 0 auto;}
@@ -226,9 +227,9 @@ aside {
 }
 h1 {
     font-size: 22px;
-    /*float: left;*/
+    float: left;
     font-weight: normal;
-    display: inline-block;
+    /*display: inline-block;*/
 }
 section {
     text-align: left;
@@ -333,10 +334,10 @@ section {
     background: #aaa;
 }
 .form {
-    margin-top: 30px;
+    padding-top: 30px;
     font-size: 0;
     line-height: 0;
-
+    clear: right;
 }
 
 .form-elem {
@@ -506,6 +507,27 @@ small {
     text-align: center;
     position: relative;
     z-index: 111;
+}
+.mobile-right {
+    float: right;
+    display: none;
+    /*margin-right: 15px;*/
+    line-height: 0;
+}
+.mobile-right .button{
+    /*height: 30px;*/
+    padding: 10px 15px;
+    margin: 0;
+}
+.icon-bar {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: #000;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    margin-top: 2px;
 }
 /* ==========================================================================
    Helper classes
@@ -694,5 +716,70 @@ small {
     h2,
     h3 {
         page-break-after: avoid;
+    }
+}
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .wrapper {
+        width: auto;
+    }
+    header, section {
+        margin-left: 0;
+    }
+    aside {
+        float: none;
+        width: auto;
+    }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        width: auto;
+    }
+    header {
+        padding: 10px;
+    }
+    header, section {
+        margin-left: 0;
+
+    }
+    aside, .steps-block {
+        float: none;
+        width: auto;
+    }
+    .menu .mobile-right {
+            display: block;
+    }
+    .head-menu {
+        /*display: block;*/
+        display: none;
+        clear: both;
+    }
+    .head-menu li {
+        display: block;
+        padding: 6px 0;
+    }
+    h1 {float: none}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .form-elem {
+        width: 50%;
+    }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    .form-elem {
+        width: 100%;
+        padding: 0;
+    }
+    .form-elem input{
+        width: 100%;
     }
 }
