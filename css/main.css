@@ -1,0 +1,698 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+:focus {
+
+    outline:0;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
+}
+a:focus {
+    outline:0;
+    box-shadow: none;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.wrapper {
+    width: 930px;
+    margin: 30px auto;
+    text-align: center;
+}
+.rating {display: inline-block;  margin: 0 auto;}
+.rating-result {margin-bottom: 20px;}
+.rating label {float:left; width:16px; height: 16px; overflow:hidden;
+    white-space:nowrap; cursor:pointer; text-indent: -9999px; }
+.rating:not(:checked) > input { position:absolute; top:-9999px; clip:rect(0,0,0,0); }
+.rating label {background: url('../img/star.png') no-repeat 0 -16px;}
+
+
+.rating .rating-over {background: url('../img/star.png') no-repeat 0 0;}
+.rating .rating-sel {background: url('../img/star.png') no-repeat 0 0;}
+
+
+div.button, a.button , input.button {
+    position: relative;
+    display: inline-block;
+    /*height: 20px;*/
+    cursor: pointer;
+    color:#000;
+    background: #f5f5f5;
+    background: -moz-linear-gradient(top,  #f5f5f5 0%, #e8e8e8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#e8e8e8));
+    background: -webkit-linear-gradient(top,  #f5f5f5 0%,#e8e8e8 100%);
+    background: -o-linear-gradient(top,  #f5f5f5 0%,#e8e8e8 100%);
+    background: -ms-linear-gradient(top,  #f5f5f5 0%,#e8e8e8 100%);
+    background: linear-gradient(to bottom,  #f5f5f5 0%,#e8e8e8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#e8e8e8',GradientType=0 );
+
+    text-shadow: 1px 1px 0 #fafafa;
+    border-bottom: 1px solid #b9b9b9;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    border-top: 1px solid #ebebeb;
+    -webkit-border-radius: 8px;
+    -moz-border-right: 8px;
+    border-radius: 8px;
+    /*font-weight: bold;*/
+    text-align: center;
+    margin: 15px 10px;
+}
+a.button {
+    text-decoration: none;
+}
+
+.button.small {
+    font-size: 11px;
+    padding: 0 20px;
+    line-height: 20px;
+}
+.button.normal {
+    font-size: 15px;
+    padding: 0 30px;
+    line-height: 30px;
+}
+.button.big {
+    font-size: 20px;
+    padding: 0 40px;
+    line-height: 40px;
+}
+header {
+    margin: 40px 0px;
+    padding: 28px 0;
+    border: 1px solid;
+    border-top-color: #f4f4f4;
+    border-left-color: #dedede;
+    border-right-color: #dedede;
+    border-bottom-color: #bdbdbd;
+    border-radius: 12px;
+    margin-left: 240px;
+
+}
+.menu {
+    display: table;
+    width: 100%;
+}
+.head-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: table-row;
+}
+.head-menu li{
+    /*width: 16.6%;*/
+    /*float: left;*/
+    padding: 0 15px;
+    text-align: center;
+    display: table-cell;
+    /*width: 1%;*/
+
+}
+.head-menu li.elem-1 a {
+    color: #4900a4
+}
+.head-menu li.elem-2 a {
+    color: #14731b
+}
+.head-menu li.elem-3 a {
+    color: #0e73d9
+}
+.head-menu li.elem-4 a {
+    color: #dd4c00
+}
+.head-menu li.elem-5 a {
+    color: #333
+}
+.head-menu li.elem-6 a {
+    color: #b60700
+}
+aside {
+    width: 216px;
+    float: left;
+    text-align: left;
+    font-size: 14px;
+}
+h1 {
+    font-size: 22px;
+    /*float: left;*/
+    font-weight: normal;
+    display: inline-block;
+}
+section {
+    text-align: left;
+    margin-left: 240px;
+}
+.steps-block {
+    width: 460px;
+    float: right;
+    color: #7b7b7b;
+    text-align: center;
+    line-height: 16px;
+    font-size: 12px;
+    font-style: italic;
+}
+.steps-block ul  {
+    background: #cdcdcd;
+    background: -moz-linear-gradient(top,  #cdcdcd 0%, #ececec 2%, #f9f9f9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cdcdcd), color-stop(2%,#ececec), color-stop(100%,#f9f9f9));
+    background: -webkit-linear-gradient(top,  #cdcdcd 0%,#ececec 2%,#f9f9f9 100%);
+    background: -o-linear-gradient(top,  #cdcdcd 0%,#ececec 2%,#f9f9f9 100%);
+    background: -ms-linear-gradient(top,  #cdcdcd 0%,#ececec 2%,#f9f9f9 100%);
+    background: linear-gradient(to bottom,  #cdcdcd 0%,#ececec 2%,#f9f9f9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdcdcd', endColorstr='#f9f9f9',GradientType=0 );
+
+    -webkit-border-radius: 4px;
+    -moz-border-right: 4px;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    border-right: 1px solid #d6d6d6;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.steps-block ul li {
+    float: left;
+    border-top: 1px solid #d7d7d7;
+    width: 20%;
+    list-style: none;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;
+
+}
+.steps-block ul li:last-child {
+    border-right: 0;
+}
+.steps-block ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    background: #2d8213;
+    background: -moz-linear-gradient(top,  #2d8213 0%, #3aaa19 5%, #3aa818 48%, #7cc866 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2d8213), color-stop(5%,#3aaa19), color-stop(48%,#3aa818), color-stop(100%,#7cc866));
+    background: -webkit-linear-gradient(top,  #2d8213 0%,#3aaa19 5%,#3aa818 48%,#7cc866 100%);
+    background: -o-linear-gradient(top,  #2d8213 0%,#3aaa19 5%,#3aa818 48%,#7cc866 100%);
+    background: -ms-linear-gradient(top,  #2d8213 0%,#3aaa19 5%,#3aa818 48%,#7cc866 100%);
+    background: linear-gradient(to bottom,  #2d8213 0%,#3aaa19 5%,#3aa818 48%,#7cc866 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d8213', endColorstr='#7cc866',GradientType=0 );
+
+
+
+}
+.steps-block ul li a.active {
+    background: #79a003;
+    background: -moz-linear-gradient(top,  #79a003 0%, #97c804 5%, #9acc05 48%, #c2e55a 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#79a003), color-stop(5%,#97c804), color-stop(48%,#9acc05), color-stop(100%,#c2e55a));
+    background: -webkit-linear-gradient(top,  #79a003 0%,#97c804 5%,#9acc05 48%,#c2e55a 100%);
+    background: -o-linear-gradient(top,  #79a003 0%,#97c804 5%,#9acc05 48%,#c2e55a 100%);
+    background: -ms-linear-gradient(top,  #79a003 0%,#97c804 5%,#9acc05 48%,#c2e55a 100%);
+    background: linear-gradient(to bottom,  #79a003 0%,#97c804 5%,#9acc05 48%,#c2e55a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79a003', endColorstr='#c2e55a',GradientType=0 );
+
+}
+
+.cat-title {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-style: italic;
+    color: #666;
+    clear: right;
+    font-size: 14px;
+    line-height: normal;
+    margin-bottom: 20px;
+    /*margin: 20px 0;*/
+}
+.cat-title span {
+    padding-right: 10px;
+    background: #fff;
+}
+.cat-title:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #aaa;
+}
+.form {
+    margin-top: 30px;
+    font-size: 0;
+    line-height: 0;
+
+}
+
+.form-elem {
+    vertical-align: top;
+    display: inline-block;
+    width: 33.3%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-size: 12px;
+    line-height: normal;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+.form-row {
+    font-size: 12px;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.form input[type="text"], .form input[type="date"] {
+    width: 100%;
+    border: 1px solid #abadb3;
+    padding: 3px 5px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-size: 12px;
+}
+.form .radio-group label.active {
+    background: #8cb903;
+    -webkit-border-radius: 4px;
+    -moz-border-right: 4px;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    padding: 3px 6px;
+    margin: 0;
+
+}
+.form .form-bottom {
+    padding: 15px 10px;
+    background: #f2f2f2;
+}
+.form .form-bottom input {
+    font-size: 17px;
+    border-radius: 16px;
+    color: #fff;
+    background: #e3e3e3;
+    background: -moz-linear-gradient(top,  #e3e3e3 0%, #cbcbcb 11%, #acacac 98%, #7e7e7e 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e3e3e3), color-stop(11%,#cbcbcb), color-stop(98%,#acacac), color-stop(100%,#7e7e7e));
+    background: -webkit-linear-gradient(top,  #e3e3e3 0%,#cbcbcb 11%,#acacac 98%,#7e7e7e 100%);
+    background: -o-linear-gradient(top,  #e3e3e3 0%,#cbcbcb 11%,#acacac 98%,#7e7e7e 100%);
+    background: -ms-linear-gradient(top,  #e3e3e3 0%,#cbcbcb 11%,#acacac 98%,#7e7e7e 100%);
+    background: linear-gradient(to bottom,  #e3e3e3 0%,#cbcbcb 11%,#acacac 98%,#7e7e7e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e3e3', endColorstr='#7e7e7e',GradientType=0 );
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.65);
+    font-weight: lighter;
+    border: none;
+    padding: 8px 16px;
+    /*-webkit-box-shadow: inset 0px -8px 18px 0px rgba(136, 136, 136, 0.3);*/
+    /*-moz-box-shadow:    inset 0px -8px 18px 0px rgba(136, 136, 136, 0.3);*/
+    /*box-shadow:         inset 0px -8px 18px 0px rgba(136, 136, 136, 0.3);*/
+}
+.form .form-bottom input.green {
+    background: #daee9e;
+    background: -moz-linear-gradient(top,  #daee9e 0%, #aadc12 11%, #91c103 98%, #a7c453 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#daee9e), color-stop(11%,#aadc12), color-stop(98%,#91c103), color-stop(100%,#a7c453));
+    background: -webkit-linear-gradient(top,  #daee9e 0%,#aadc12 11%,#91c103 98%,#a7c453 100%);
+    background: -o-linear-gradient(top,  #daee9e 0%,#aadc12 11%,#91c103 98%,#a7c453 100%);
+    background: -ms-linear-gradient(top,  #daee9e 0%,#aadc12 11%,#91c103 98%,#a7c453 100%);
+    background: linear-gradient(to bottom,  #daee9e 0%,#aadc12 11%,#91c103 98%,#a7c453 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#daee9e', endColorstr='#a7c453',GradientType=0 );
+
+}
+.form .radio-group label{
+    width: auto;
+    /*margin-right: 6px;*/
+    display: inline-block;
+    font-weight: normal;
+
+    border-bottom: 1px dotted #000;
+    margin: 3px 6px;
+    padding: 0;
+}
+.form select {
+    border: 1px solid #abadb3;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-size: 12px;
+    padding: 3px 5px;
+    height: 22px;
+}
+.form input[type="radio"] {
+    width: auto;
+    display: none;
+    /*visibility: hidden;*/
+}
+
+.form .full-width {
+    width: 100%;
+}
+small {
+    margin-top: 6px;
+    display: block;
+    color: #7a7a7a;
+}
+.rcol {
+    float: right;
+}
+
+#progress {
+    height: 13px;
+    position: relative;
+    width: 210px;
+    clear: both;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background: #e6e6e6;
+    background: -moz-linear-gradient(top,  #e6e6e6 0%, #f4f4f4 3%, #ffffff 98%, #e6e6e6 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e6e6e6), color-stop(3%,#f4f4f4), color-stop(98%,#ffffff), color-stop(100%,#e6e6e6));
+    background: -webkit-linear-gradient(top,  #e6e6e6 0%,#f4f4f4 3%,#ffffff 98%,#e6e6e6 100%);
+    background: -o-linear-gradient(top,  #e6e6e6 0%,#f4f4f4 3%,#ffffff 98%,#e6e6e6 100%);
+    background: -ms-linear-gradient(top,  #e6e6e6 0%,#f4f4f4 3%,#ffffff 98%,#e6e6e6 100%);
+    background: linear-gradient(to bottom,  #e6e6e6 0%,#f4f4f4 3%,#ffffff 98%,#e6e6e6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#e6e6e6',GradientType=0 );
+    border-bottom: 1px solid #f4f4f4;
+    border-right: 1px solid #f2f2f2;
+    border-left: 1px solid #f2f2f2;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-right: 6px;
+    color: #000;
+    font-size: 10px;
+    line-height: 13px;
+    font-weight: bold;
+    overflow: hidden;
+}
+#progress .progressbar_value
+{
+    background: #a2ff8d;
+    background: -moz-linear-gradient(top,  #a2ff8d 0%, #00d021 50%, #74ea65 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a2ff8d), color-stop(50%,#00d021), color-stop(100%,#74ea65));
+    background: -webkit-linear-gradient(top,  #a2ff8d 0%,#00d021 50%,#74ea65 100%);
+    background: -o-linear-gradient(top,  #a2ff8d 0%,#00d021 50%,#74ea65 100%);
+    background: -ms-linear-gradient(top,  #a2ff8d 0%,#00d021 50%,#74ea65 100%);
+    background: linear-gradient(to bottom,  #a2ff8d 0%,#00d021 50%,#74ea65 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2ff8d', endColorstr='#74ea65',GradientType=0 );
+
+    height: 13px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20%;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-right: 6px;
+    -moz-border-right: 6px;
+}
+#progress .progressvalue {
+    text-align: center;
+    position: relative;
+    z-index: 111;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

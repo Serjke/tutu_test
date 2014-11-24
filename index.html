@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>tutu.ru</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+
+
+<div class="wrapper">
+
+    <fieldset class="rating">
+        <input type="radio" id="star1" name="rating" value="1"/><label for="star1" title="1">1</label>
+        <input type="radio" id="star2" name="rating" value="2"/><label for="star2" title="2">2</label>
+        <input type="radio" id="star3" name="rating" value="3"/><label for="star3" title="3">3</label>
+        <input type="radio" id="star4" name="rating" value="4"/><label for="star4" title="4">4</label>
+        <input type="radio" id="star5" name="rating" value="5"/><label for="star5" title="5">5</label>
+
+    </fieldset>
+    <div class="rating-result"></div>
+
+    <div id="progress">
+        <div class="progressvalue">20%</div>
+        <div class="progressbar_value"></div>
+    </div>
+    <a class="button small">
+        Кнопка
+    </a>
+
+    <div class="button small">
+        Кнопка
+    </div>
+
+
+    <input type="submit" class="button small" value="Кнопка"/>
+    <br/>
+    <a class="button normal">
+        Кнопка
+    </a>
+
+    <div class="button normal">
+        Кнопка
+    </div>
+
+
+    <input type="submit" class="button normal" value="Кнопка"/>
+    <br/>
+    <a class="button big">
+        Кнопка
+    </a>
+
+    <div class="button big">
+        Кнопка
+    </div>
+    <input type="submit" class="button big" value="Кнопка">
+
+    <header>
+        <div class="menu">
+            <ul class="head-menu clearfix">
+                <li class="elem-1"><a href="#">Личный кабинет</a></li>
+                <li class="elem-2"><a href="#">Раздел 1</a></li>
+                <li class="elem-3"><a href="#">Раздел 2</a></li>
+                <li class="elem-4"><a href="#">Раздел 3</a></li>
+                <li class="elem-5"><a href="#">Раздел 4</a></li>
+                <li class="elem-6"><a href="#">Раздел 5</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <aside>
+        <p>&#9728; TutuRu - крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.</p>
+
+        <p>Наша цель проста - делать наших клиентов счастливыми, а их путешествия незабываемыми. Любое путешествие
+            начинается с поиска подходящих билетов и бронирования гостиниц. А мы делаем это качественно, обеспечивая
+            самую лучшую поддержку благодаря собственному контакт-центру.</p>
+    </aside>
+    <section>
+        <h1>Заполните форму</h1>
+
+        <div class="steps-block">
+            <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#" class="active">3</a></li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </div>
+        <div class="form clearfix">
+            <form action="index.html">
+            <fieldset>
+                <legend class="cat-title"><span>Общая информация</span></legend>
+                <div class="form-elem">
+                    <label for="elem[1]">Фамилия</label>
+                    <input type="text" id="elem[1]"/>
+                </div>
+                <div class="form-elem">
+                    <label for="elem[2]">Имя</label>
+                    <input type="text" id="elem[2]"/>
+                </div>
+                <div class="form-elem">
+                    <label for="elem[3]">Отчетсво</label>
+                    <input type="text" id="elem[3]"/>
+                </div>
+                <div class="form-elem">
+                    <label>Меняли фамилию?</label>
+
+                    <div class="radio-group">
+                        <label><input type="radio" name="cname"/> Да</label>
+                        <label class="active"><input type="radio" name="cname" checked="checked"/> Нет</label>
+                    </div>
+                </div>
+                <div class="form-elem">
+                    <label>Пол</label>
+
+                    <div class="radio-group">
+                        <label><input type="radio" name="sex"/> Муж</label>
+                        <label class="active"><input type="radio" name="sex" checked="checked"/> Жен</label>
+                    </div>
+                </div>
+                <div class="form-elem">
+                    <label for="elem[6]">Семейное положение</label>
+                    <select name="" id="elem[6]" class="full-width">
+                        <option value="">Женат / Замужем</option>
+                    </select>
+                </div>
+                <div class="form-elem">
+                    <label for="elem[7]">Гражданство</label>
+                    <select name="" id="elem[7]" class="full-width">
+                        <option value="">Российская Федерация</option>
+                    </select>
+                </div>
+                <div class="form-elem">
+                    <label for="elem[8]">Дата рождения</label>
+                    <!--<input type="date" name="elem[8]">-->
+                    <select name="" id="elem[8]">
+                        <option value="">11</option>
+                    </select>
+                    <select name="">
+                        <option value="">Февраля</option>
+                    </select>
+                    <select name="">
+                        <option value="">1970</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="elem[3]">Место рождения</label>
+                    <input type="text">
+                    <small>Например, Россия, Комсомольск-на-амуре</small>
+                </div>
+            </fieldset>
+            <div class="form-bottom clearfix">
+                <input type="submit" onclick="return false;" value="&larr; Назад"/>
+                <input type="submit" class="rcol green" value="Далее &rarr;"/>
+            </div>
+            </form>
+        </div>
+    </section>
+
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
